@@ -57,7 +57,7 @@ function selecionarsobremesa(classesobremesa, numero) {
 
     const seletor = "." + classesobremesa + "." + numero;
     const sobremesas = document.querySelector(seletor);
-    sobremesas.classList.add('selecionado');
+    sobremesas.classList.toggle('selecionado');
 
     const sobremesaselect = document.querySelector(".terceira .selecionado .titulo");
     sobremesaSelecionada = sobremesaselect.innerHTML;
