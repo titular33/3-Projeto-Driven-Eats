@@ -113,21 +113,6 @@ function botaoverde() {
     const telanomesobremesa = document.querySelector(".mascara .caixa-confirmacao .descricao .sobremesaselecionada");
     telanomesobremesa.innerHTML = sobremesaSelecionada;
 }
-function wpp() {
-
-    const texto = `Olá, gostaria de fazer o pedido:\n
-        - Prato: ${prato}\n
-        - Bebida: ${drink}\n
-        - Sobremesa: ${doce}\n
-          Total:  R$ ${precototal.toFixed(2).replace('.',',')}\n
-          
-        - Endereço: ${endereco}\n
-        - Nome: ${nome}`;
-    const textoEncode = encodeURI(texto);
-    const link = `https://wa.me/5532999881997text=${textoEncode}
-    window.location.href = `https://wa.me/5532999881997?text=${textoEncode}';
-    
-}
 
 function cancelar() {
     const cancelar = document.querySelector(".mascara");
