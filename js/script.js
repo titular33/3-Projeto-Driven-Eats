@@ -7,7 +7,7 @@ let sobremesaSelecionada;
 let prato;
 let drink;
 let doce;
-let precototal;
+let precoTotal;
 let endereco;
 let nome;
 let total;
@@ -90,10 +90,10 @@ function botaoverde() {
     precocomida = (document.querySelector(".primeira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
     precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
     precosobremesa = (document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-    precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
+    precoTotal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
 
     const total = document.querySelector(".mascara .caixa-confirmacao .descricao .total");
-    total.innerHTML = precototal.toFixed(2).replace('.', ',').replace('', 'R$ ');
+    total.innerHTML = precoTotal.toFixed(2).replace('.', ',').replace('', 'R$ ');
 
     const telaprecoprato = document.querySelector(".mascara .caixa-confirmacao .descricao .valorp");
     telaprecoprato.innerHTML = precocomida.replace('.', ',').replace('', 'R$');
@@ -113,11 +113,14 @@ function botaoverde() {
     const telanomesobremesa = document.querySelector(".sobremesaselecionada");
     telanomesobremesa.innerHTML = sobremesaSelecionada;
 }
-function wp()
+function wpp()
 
 {
+    let nome=prompt("Qual é o seu nome ?");
+    let endereco=prompt("Onde você mora ?")
 
-
+    let texto="Olá, gostaria de fazer o pedido:\n-Prato: ${prato}\n-Bebida: ${bebida}\n-Sobremesa:  ${doce}\nTotal: R$ ${precoTotal}\n";
+    window.open(`https://wa.me/5532999881997?text=${encodeURIComponent(texto)}`)
 }
 
 function cancelar() {
