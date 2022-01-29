@@ -52,12 +52,12 @@ function selecionarsobremesa(classesobremesa, numero) {
     const selecionado = document.querySelector(".terceira .selecionado");
 
     if (selecionado !== null) {
-        selecionado.classList.remove('selecionado');
+        selecionado.classList.toggle('selecionado');
     }
 
     const seletor = "." + classesobremesa + "." + numero;
     const sobremesas = document.querySelector(seletor);
-    sobremesas.classList.toggle('selecionado');
+    sobremesas.classList.add('selecionado');
 
     const sobremesaselect = document.querySelector(".terceira .selecionado .titulo");
     sobremesaSelecionada = sobremesaselect.innerHTML;
@@ -104,17 +104,24 @@ function botaoverde() {
     const telaprecosobremesa = document.querySelector(".mascara .caixa-confirmacao .descricao .valors");
     telaprecosobremesa.innerHTML = precosobremesa.replace('.', ',').replace('', 'R$');
 
-    const telanomeprato = document.querySelector(".mascara .caixa-confirmacao .descricao .pratoselecionado");
+    const telanomeprato = document.querySelector(".pratoselecionado");
     telanomeprato.innerHTML = pratoSelecionado;
 
-    const telanomebebida = document.querySelector(".mascara .caixa-confirmacao .descricao .bebidaselecionada");
+    const telanomebebida = document.querySelector(".bebidaselecionada");
     telanomebebida.innerHTML = bebidaSelecionada;
 
-    const telanomesobremesa = document.querySelector(".mascara .caixa-confirmacao .descricao .sobremesaselecionada");
+    const telanomesobremesa = document.querySelector(".sobremesaselecionada");
     telanomesobremesa.innerHTML = sobremesaSelecionada;
+}
+function wp()
+
+{
+
+
 }
 
 function cancelar() {
     const cancelar = document.querySelector(".mascara");
     cancelar.classList.add('escondido');
 }
+ 
