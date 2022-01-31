@@ -24,97 +24,97 @@
     </div>
     <div class="corpo">
       <div class="nome-tipo">Primeiro, seu prato</div>
-      <div class="tipo primeira">
-        <div class="prato um" onclick="selecionarprato('prato', 'um')">
+      <div class="tipo primeira" data-identifier="dishes">
+        <div class="prato um" onclick="selecionarprato('prato', 'um')" data-identifier="food-option">
           <img src="imagens/frango_yin_yang 2.png" alt="Prato com frango" />
-          <div class="titulo">Frango Yin Yang</div>
+          <div class="titulo" data-identifier="food-title">Frango Yin Yang</div>
           <div class="subtitulo"> Um pouco de batata, </br>um pouco de salada </div>
-          <div class="preco">R$ 19,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 19,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="prato dois" onclick="selecionarprato('prato', 'dois')">
+        <div class="prato dois" onclick="selecionarprato('prato', 'dois')" data-identifier="food-option">
           <img src="imagens/feijao-tropeiro.png" alt="prato com camarao" />
-          <div class="titulo">Feijão Tropeiro</div>
+          <div class="titulo" data-identifier="food-title">Feijão Tropeiro</div>
           <div class="subtitulo">Direto do Mineirão </div>
-          <div class="preco">R$ 35,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 35,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="prato tres" onclick="selecionarprato('prato', 'tres')">
+        <div class="prato tres" onclick="selecionarprato('prato', 'tres')" data-identifier="food-option">
           <img src="imagens/lasanha bolonhesa.jpg" alt="prato com lasanha" />
-          <div class="titulo">Lasanha</div>
-          <div class="subtitulo">Bolonhesa</div>
-          <div class="preco">R$ 20,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="titulo" data-identifier="food-title">Lasanha</div>
+          <div class="subtitulo">Sadia</div>
+          <div class="preco" data-identifier="food-price">R$ 20,90 <ion-icon name="checkmark-circle" data-identifier="food-option"></ion-icon>
           </div>
         </div>
-        <div class="prato quatro" onclick="selecionarprato('prato', 'quatro')">
+        <div class="prato quatro" onclick="selecionarprato('prato', 'quatro')" data-identifier="food-option">
           <img src="imagens/hamburguer-fritas.png" alt="prato com hambúrguer" />
-          <div class="titulo">Hambúrguer</div>
+          <div class="titulo" data-identifier="food-title">Hambúrguer</div>
           <div class="subtitulo"> Com fritas </br> </div>
-          <div class="preco">R$ 25,90<ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 25,90<ion-icon name="checkmark-circle" data-identifier="food-option"></ion-icon>
           </div>
         </div>
       </div>
       <div class="nome-tipo">Agora, sua bebida</div>
-      <div class="tipo segunda">
-        <div class="bebida um" onclick="selecionarbebida('bebida', 'um')">
+      <div class="tipo segunda" data-identifier="drinks">
+        <div class="bebida um" onclick="selecionarbebida('bebida', 'um')" data-identifier="food-option">
           <img src="imagens/coquinha_gelada 2.png" alt="refrigerante de cola" />
-          <div class="titulo">Coquinha Gelada</div>
+          <div class="titulo" data-identifier="food-title">Coquinha Gelada</div>
           <div class="subtitulo">Lata 350ml</div>
-          <div class="preco">R$ 4,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 4,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="bebida dois" onclick="selecionarbebida('bebida', 'dois')">
+        <div class="bebida dois" onclick="selecionarbebida('bebida', 'dois')" data-identifier="food-option">
           <img src="imagens/limonada-suica.png.png" alt="limonada" />
-          <div class="titulo">Limonada Suica</div>
+          <div class="titulo" data-identifier="food-title">Limonada Suica</div>
           <div class="subtitulo">Copo 500ml</div>
-          <div class="preco">R$ 7,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 7,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
 
-        <div class="bebida tres" onclick="selecionarbebida('bebida', 'tres')">
+        <div class="bebida tres" onclick="selecionarbebida('bebida', 'tres')" data-identifier="food-option">
           <img src="imagens/Brahma.jpg" alt="suco" />
-          <div class="titulo">Brahma</div>
+          <div class="titulo" data-identifier="food-title">Brahma</div>
           <div class="subtitulo">Latão</div>
-          <div class="preco">R$ 8,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 8,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="bebida quatro" onclick="selecionarbebida('bebida', 'quatro')">
+        <div class="bebida quatro" onclick="selecionarbebida('bebida', 'quatro')" data-identifier="food-option">
           <img src="imagens/Heineken.png" alt="cerveja" />
-          <div class="titulo">Heineken</div>
+          <div class="titulo" data-identifier="food-title">Heineken</div>
           <div class="subtitulo">Long neck 350ml</div>
-          <div class="preco">R$ 12,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 12,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
       </div>
       <div class="nome-tipo">Por fim, sua sobremesa</div>
-      <div class="tipo terceira">
-        <div class="sobremesa um" onclick="selecionarsobremesa('sobremesa', 'um')">
+      <div class="tipo terceira" data-identifier="desserts">
+        <div class="sobremesa um" onclick="selecionarsobremesa('sobremesa', 'um')" data-identifier="food-option">
           <img src="imagens/brownie-do-rapha.jpg" alt="brownie" />
-          <div class="titulo">Brownie do Raffa</div>
+          <div class="titulo" data-identifier="food-title">Brownie do Raffa</div>
           <div class="subtitulo">Com cobertura de Nutella</div>
-          <div class="preco">R$ 7,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 7,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="sobremesa dois" onclick="selecionarsobremesa('sobremesa', 'dois')">
+        <div class="sobremesa dois" onclick="selecionarsobremesa('sobremesa', 'dois')" data-identifier="food-option">
           <img src="imagens/pudim 2.png" alt="pudim" />
-          <div class="titulo">Pudim</div>
+          <div class="titulo" data-identifier="food-title">Pudim</div>
           <div class="subtitulo">Leite Condensado</div>
-          <div class="preco">R$ 8,90 <ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 8,90 <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="sobremesa tres" onclick="selecionarsobremesa('sobremesa', 'tres')">
+        <div class="sobremesa tres" onclick="selecionarsobremesa('sobremesa', 'tres')" data-identifier="food-option">
           <img src="imagens/Sorvete.png" alt="sorvete" />
-          <div class="titulo">Sorvete</div>
+          <div class="titulo" data-identifier="food-title">Sorvete</div>
           <div class="subtitulo">Sabor Flocos</div>
-          <div class="preco">R$ 9,90<ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 9,90<ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
-        <div class="sobremesa quatro" onclick="selecionarsobremesa('sobremesa', 'quatro')">
+        <div class="sobremesa quatro" onclick="selecionarsobremesa('sobremesa', 'quatro')" data-identifier="food-option">
           <img src="imagens/bolo-de-cenoura-png.png" alt="bolo de cenoura" />
-          <div class="titulo">Bolo de cenoura</div>
+          <div class="titulo" data-identifier="food-title">Bolo de cenoura</div>
           <div class="subtitulo">com cobertura de chocolate</div>
-          <div class="preco">R$ 9,90<ion-icon name="checkmark-circle"></ion-icon>
+          <div class="preco" data-identifier="food-price">R$ 9,90<ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@
     </div>
   </div>
   <div class="mascara escondido">
-    <div class="caixa-confirmacao">
+    <div class="caixa-confirmacao" data-identifier="confirmation-dialog">
       <p class="bold"> Confirme seu pedido</p>
       <div class="descricao">
         <div class="alinhamento"><span class="pratoselecionado">pratox</span><span class="valorp">valorprato</span>
