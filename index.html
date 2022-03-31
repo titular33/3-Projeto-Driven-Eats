@@ -3,6 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
+
+  <meta> name = "theme-color" content = "#f9f9f9" />
+    <link rel="apple-touch-icon" href="/imagens/pudim 2.png">
+    <link rel="shortcut icon" href="/imagens/pudim 2.png" type="image/x-icon" />
+    <link rel="canonical" href="https://titular33.github.io/3-Projeto-Driven-Eats/">
   <title>Driveneats do Titu</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -17,6 +22,16 @@
 </head>
 
 <body>
+  <script>
+    if("serviceWorker" in navigator){
+      navigator.serviceWorker.register("/sw.js").then(function(){
+        console.log("Service Worker registrado com sucesso");
+      }).catch(function(){
+        console.log("Erro ao registrar o Service Worker");
+      });
+    }
+
+  </script>
   <div class="pagina">
     <div class="topo">
       <div class="logo">DrivenEats<p>Sua comida em 6 minutos</p>
